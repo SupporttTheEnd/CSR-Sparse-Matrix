@@ -1,32 +1,29 @@
 # CMSC-341-Project1
-# CSR (Compressed Sparse Row) Matrix Implementation
+
+# CSR Sparse Matrix Implementation
 
 ## Overview
-This project implements a CSR (Compressed Sparse Row) matrix data structure in C++. CSR matrices are useful for efficiently representing and performing operations on sparse matrices, where most of the elements are zero.
+
+This project implements a Compressed Sparse Row (CSR) matrix data structure in C++. It includes classes for representing individual CSR matrices (`CSR`) as well as a linked list to manage multiple matrices (`CSRList`). The CSR matrix is suitable for sparse matrices, where the majority of elements are zero, as it efficiently stores only the non-zero elements.
 
 ## Files
-- `csr.h`: Header file containing class declarations for the CSR matrix.
-- `csr.cpp`: Implementation file for the CSR matrix class.
-- `main.cpp`: Sample main file demonstrating the usage of the CSR matrix class.
-- `Makefile`: Makefile to automate compilation and execution.
-- `test.cpp`: Test file containing unit tests for the CSR matrix class.
+
+- `csr.h`: Header file containing declarations for the `CSR` and `CSRList` classes.
+- `csr.cpp`: Implementation file containing definitions for the methods of the `CSR` and `CSRList` classes.
+- `mytest.cpp`: Test file demonstrating the usage of the CSR matrix classes.
+- `driver.cpp`: Driver file for executing the test cases.
+- `Makefile`: Makefile for compiling and linking the project.
 
 ## Compilation and Execution
-To compile the program use the makefile.
+
+- To compile the project, run `make p`.
+- To compile the project with the driver program, run `make d`.
+- To clean the compiled files, run `make clean`.
+- To run the executable, use the `./proj1` command.
+- To run the executable with Valgrind for memory leak detection, use `make v`.
 
 ## Usage
-1. Include `csr.h` in your C++ code.
-2. Create CSR matrix objects using the provided constructors and member functions.
-3. Use member functions to perform operations on CSR matrices, such as compression, retrieval, and comparison.
-4. Sample usage can be found in `main.cpp`.
 
-## Testing
-Unit tests for the CSR matrix class are provided in `mytest.cpp`. You can compile and run the tests using the Makefile:
-
-
-## Author
-- Andrew Tang
-
-## Date
-- September 27, 2023
-
+- Include `csr.h` in your C++ code where you want to use CSR matrices.
+- Create CSR matrices using the `CSR` class and manage multiple matrices using the `CSRList` class.
+- Use methods such as `compress`, `getAt`, `operator==`, etc., to manipulate and compare CSR matrices.
