@@ -5,12 +5,10 @@
 #include <stdexcept>
 using std::runtime_error;
 using namespace std;
-class Grader;
 class Tester;
 // CSR class represents a matrix
 class CSR{
     public:
-    friend class Grader;
     friend class Tester;
     friend class CSRList;
     CSR();
@@ -41,7 +39,6 @@ class CSR{
 // CSRList class represents a list of matrices (CSR objects)
 class CSRList{
     public:
-    friend class Grader;
     friend class Tester;
     CSRList();
     ~CSRList();
