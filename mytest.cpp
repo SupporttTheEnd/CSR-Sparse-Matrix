@@ -1,4 +1,3 @@
-// UMBC - CMSC 341 - Fall 2023 - Proj1
 // Title: mytest.cpp
 // Author: Andrew Tang
 // Date: 9/27/2023
