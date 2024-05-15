@@ -1,5 +1,3 @@
-# CMSC-341-Project1
-
 # CSR Sparse Matrix Implementation
 
 ## Overview
